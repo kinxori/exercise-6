@@ -77,7 +77,7 @@ p{
 }
 
 .animation-scale-rotation{
-    animation: animation-scale-rotation 10s linear;
+    animation: animation-scale-rotation 10s cubic-bezier(0.88, 0.16, 0.89, 0.75);
     animation-iteration-count: infinite;
 }
 
