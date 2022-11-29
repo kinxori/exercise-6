@@ -9,7 +9,6 @@ html, body{
 .whole{
     width: 1000px;
     height: 300px;
-    background-color: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
