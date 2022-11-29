@@ -1,0 +1,79 @@
+.whole{
+    width: 1000px;
+    height: 300px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 8px;
+    width: 80%px;
+    height: 25%px;
+    color:transparent;
+    padding: 6rem;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: left;
+    --timing:.2;
+
+}
+
+@keyframes animation-text{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+        transform:translateY(40px);
+        text-shadow: 0px 0px 5px white;
+        
+    }
+    20%, 50%{
+        transform: scale(1);
+        opacity: 1;
+        transform:translateY(0px);
+        text-shadow: 0px 0px 0px white;
+
+
+    } 
+    70%, 100%{
+        transform: scale(0);
+        opacity: 0; 
+        transform:translateY(20px);
+        text-shadow: 0px 0px 5px white;
+        
+    } 
+     
+
+}
+.animation-text{
+    animation: animation-text 10s ease;
+    animation-delay: calc(var(--timing)*.1s);   
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-scale-rotation{
+    from{
+        transform:scale(1) rotateZ(5deg)    
+    }
+    to{
+        transform:scale(1.2) rotateZ(-5deg)    
+    }
+
+}
+
+.animation-scale-rotation{
+    animation: animation-scale-rotation 10s linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
